@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color:red;
+            }
+             body  
+            {  
+            background-image:url("https://i0.wp.com/traxzee.com/wp-content/uploads/2021/05/TRAXZEE.COM-HD-Flowers-Wallpapers-1080X1920-035.jpg?fit=768%2C1365&ssl=1&is-pending-load=1");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;  
+            }  
+        </style>
+    </head>
+<body>
+<head>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+        table.center {
+  margin-left: auto; 
+  margin-right: auto;}
+    </style>
+</head>
+<center>
+    <h1>Upload Flower Details</h1>
+</center>
+   
+<form method="POST">
+    <h2>
+        <center>
+    {% csrf_token %}
+    {{stu.as_p}}
+<input type="submit" name="Submit">
+</center>
+</h2>
+
+</form>
+
+</body>
